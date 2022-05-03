@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/zumos/src",
+  "monorepo": true,
+  "root": "apps/zumos",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/zumos/tsconfig.app.json"
+  },
+  "projects": {
+    "zumos": {
+      "type": "application",
+      "root": "apps/zumos",
+      "entryFile": "main",
+      "sourceRoot": "apps/zumos/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/zumos/tsconfig.app.json"
+      }
+    },
+    "cmt": {
+      "type": "application",
+      "root": "apps/cmt",
+      "entryFile": "main",
+      "sourceRoot": "apps/cmt/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/cmt/tsconfig.app.json"
+      }
+    },
+    "docman": {
+      "type": "application",
+      "root": "apps/docman",
+      "entryFile": "main",
+      "sourceRoot": "apps/docman/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/docman/tsconfig.app.json"
+      }
+    },
+    "zungu": {
+      "type": "application",
+      "root": "apps/zungu",
+      "entryFile": "main",
+      "sourceRoot": "apps/zungu/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/zungu/tsconfig.app.json"
+      }
+    },
+    "sombatout": {
+      "type": "application",
+      "root": "apps/sombatout",
+      "entryFile": "main",
+      "sourceRoot": "apps/sombatout/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/sombatout/tsconfig.app.json"
+      }
+    }
+  }
+}
